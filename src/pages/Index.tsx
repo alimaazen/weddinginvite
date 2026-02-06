@@ -1,11 +1,18 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import FallingPetals from "@/components/FallingPetals";
 import InvitationCard from "@/components/InvitationCard";
 import CountdownTimer from "@/components/CountdownTimer";
+import Envelope from "@/components/Envelope";
 
 const Index = () => {
+  const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-romantic overflow-hidden relative">
+      {/* Envelope overlay */}
+      <Envelope isOpen={isEnvelopeOpen} onOpen={() => setIsEnvelopeOpen(true)} />
+
       {/* Falling flower petals animation */}
       <FallingPetals />
 
