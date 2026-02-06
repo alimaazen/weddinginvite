@@ -68,18 +68,18 @@ const ScrollInvitation = () => {
           <motion.img
             src={flowersImg}
             alt=""
-            className="absolute -top-24 -left-20 w-40 h-40 object-contain opacity-60 pointer-events-none"
+            className="absolute top-16 -left-32 w-32 h-32 object-contain opacity-50 pointer-events-none"
             initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 0.6, x: 0 }}
+            whileInView={{ opacity: 0.5, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           />
           <motion.img
             src={flowersImg}
             alt=""
-            className="absolute -top-24 -right-20 w-40 h-40 object-contain opacity-60 pointer-events-none scale-x-[-1]"
+            className="absolute top-16 -right-32 w-32 h-32 object-contain opacity-50 pointer-events-none scale-x-[-1]"
             initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 0.6, x: 0 }}
+            whileInView={{ opacity: 0.5, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
           />
