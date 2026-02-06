@@ -103,7 +103,7 @@ const ScrollInvitation = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Lateef', serif" }}>
+            <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Marhey', cursive" }}>
               احمد عادل
             </p>
             <p className="text-xl md:text-2xl font-heading tracking-[0.3em] text-foreground">
@@ -129,7 +129,7 @@ const ScrollInvitation = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Lateef', serif" }}>
+            <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Marhey', cursive" }}>
               فيداء كبير
             </p>
             <p className="text-xl md:text-2xl font-heading tracking-[0.3em] text-foreground">
