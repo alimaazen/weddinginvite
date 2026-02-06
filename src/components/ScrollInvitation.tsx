@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import floralLeft from "@/assets/floral-left.png";
-import floralRight from "@/assets/floral-right.png";
 import ScrollSection from "./ScrollSection";
 import { CameraOff, Users } from "lucide-react";
 
@@ -65,25 +63,6 @@ const ScrollInvitation = () => {
       {/* Section 3: Names */}
       <ScrollSection>
         <div className="relative text-center px-8">
-          {/* Decorative flowers */}
-          <motion.img
-            src={floralLeft}
-            alt=""
-            className="absolute -top-8 -left-40 md:-left-52 w-48 md:w-64 h-auto object-contain opacity-70 pointer-events-none"
-            initial={{ opacity: 0, x: -50, rotate: -10 }}
-            whileInView={{ opacity: 0.7, x: 0, rotate: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2 }}
-          />
-          <motion.img
-            src={floralRight}
-            alt=""
-            className="absolute -top-8 -right-40 md:-right-52 w-48 md:w-64 h-auto object-contain opacity-70 pointer-events-none"
-            initial={{ opacity: 0, x: 50, rotate: 10 }}
-            whileInView={{ opacity: 0.7, x: 0, rotate: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2 }}
-          />
 
           <motion.p
             className="text-muted-foreground font-heading text-sm tracking-widest mb-8"
