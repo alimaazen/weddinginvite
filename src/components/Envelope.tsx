@@ -127,7 +127,7 @@ const Envelope = ({
                     {/* Wax drips with shading */}
                     
                     <div className="absolute -bottom-0.5 right-2 w-1.5 h-2.5 md:w-2 md:h-3.5 bg-gradient-to-b from-rose to-rose-dark rounded-full" />
-                    <div className="absolute -bottom-0.5 right-5 w-1 h-1.5 md:w-1.5 md:h-2 bg-gradient-to-b from-rose to-rose-dark rounded-full" />
+                    
                   </motion.div>
                 </div>
               </div>
