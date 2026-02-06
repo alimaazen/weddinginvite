@@ -64,16 +64,6 @@ const ScrollInvitation = () => {
       <ScrollSection>
         <div className="relative text-center px-8">
 
-          <motion.p
-            className="text-muted-foreground font-heading text-sm tracking-widest mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            REQUEST THE HONOR OF YOUR PRESENCE AT THE WEDDING OF
-          </motion.p>
-
           {/* Groom */}
           <motion.div
             className="mb-6"
@@ -247,21 +237,12 @@ const ScrollInvitation = () => {
       {/* Section 7: Closing */}
       <ScrollSection>
         <div className="text-center">
-          <motion.p
-            className="text-xl md:text-2xl font-heading text-muted-foreground tracking-wide mb-8"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-          >
-            We would be honored by your presence
-          </motion.p>
           <motion.div
             className="flex items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
+            transition={{ duration: 0.8 }}
           >
             <div className="h-px w-12 bg-gold/50" />
             <div className="flex gap-1">
