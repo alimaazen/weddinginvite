@@ -82,7 +82,7 @@ const Envelope = ({
                 </div>
 
                 {/* Side shadows for 3D effect */}
-                <div className="absolute top-0 left-0 w-4 h-full bg-gradient-to-r from-blush-dark/10 to-transparent rounded-l-lg" />
+                
                 <div className="absolute top-0 right-0 w-4 h-full bg-gradient-to-l from-blush-dark/10 to-transparent rounded-r-lg" />
 
                 {/* Wax seal - centered on flap */}
