@@ -106,15 +106,7 @@ const Envelope = ({
               <motion.p className="font-display text-rose text-2xl md:text-3xl mb-3">
                 You're Invited
               </motion.p>
-              <motion.p className="font-heading text-muted-foreground tracking-widest text-xs md:text-sm uppercase" animate={{
-            opacity: [0.5, 1, 0.5]
-          }} transition={{
-            duration: 2.5,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}>
-                Tap to open
-              </motion.p>
+              
             </motion.div>
           </div>
         </motion.div>}
