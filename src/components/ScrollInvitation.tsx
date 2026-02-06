@@ -85,8 +85,8 @@ const ScrollInvitation = () => {
             <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Reem Kufi', sans-serif", fontWeight: 600 }}>
               احمد عادل
             </p>
-            <p className="text-xl md:text-2xl font-heading tracking-[0.3em] text-foreground">
-              AHMED ADHIL
+            <p className="text-3xl md:text-4xl text-foreground" style={{ fontFamily: "'Great Vibes', cursive" }}>
+              Ahmed Adhil
             </p>
           </motion.div>
 
@@ -111,8 +111,8 @@ const ScrollInvitation = () => {
             <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: "'Reem Kufi', sans-serif", fontWeight: 600 }}>
               فيداء كبير
             </p>
-            <p className="text-xl md:text-2xl font-heading tracking-[0.3em] text-foreground">
-              FIDA KABEER
+            <p className="text-3xl md:text-4xl text-foreground" style={{ fontFamily: "'Great Vibes', cursive" }}>
+              Fida Kabeer
             </p>
           </motion.div>
         </div>
