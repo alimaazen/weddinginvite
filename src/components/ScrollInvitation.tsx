@@ -40,7 +40,7 @@ const ScrollInvitation = () => {
             أَنَّ النَّبِيَّ ﷺ كَانَ إِذَا رَفَأَ قَالَ
           </motion.p>
           <motion.p
-            className="text-muted-foreground text-sm md:text-base font-body italic mb-8"
+            className="text-muted-foreground text-sm md:text-base font-body italic mb-3"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
