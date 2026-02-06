@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ScrollSection from "./ScrollSection";
 import { CameraOff, Users } from "lucide-react";
+import bismillahImg from "@/assets/bismillah-calligraphy.png";
 
 const ScrollInvitation = () => {
   return (
@@ -14,9 +15,11 @@ const ScrollInvitation = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <p className="text-4xl md:text-5xl font-heading text-rose leading-relaxed" style={{ fontFamily: 'serif' }}>
-            بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
-          </p>
+          <img 
+            src={bismillahImg} 
+            alt="Bismillah - In the name of Allah" 
+            className="w-full max-w-md mx-auto h-auto"
+          />
           <p className="mt-6 text-muted-foreground font-body text-sm md:text-base tracking-wide">
             In the name of Allah, the Most Gracious, the Most Merciful
           </p>
