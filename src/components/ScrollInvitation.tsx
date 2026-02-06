@@ -220,7 +220,7 @@ const ScrollInvitation = () => {
 
       {/* Section 5: Venue */}
       <ScrollSection>
-        <div className="text-center max-w-md">
+        <div className="text-center max-w-lg w-full">
           <motion.p className="text-muted-foreground font-heading text-sm tracking-widest mb-6" initial={{
           opacity: 0
         }} whileInView={{
@@ -232,7 +232,7 @@ const ScrollInvitation = () => {
         }}>
             VENUE
           </motion.p>
-          <motion.h3 className="text-3xl md:text-4xl font-display text-rose mb-4" initial={{
+          <motion.h3 className="text-3xl md:text-4xl font-display text-rose mb-2" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -246,7 +246,7 @@ const ScrollInvitation = () => {
         }}>
             Radisson Blu Hotel
           </motion.h3>
-          <motion.p className="text-lg md:text-xl font-heading text-foreground tracking-wide" initial={{
+          <motion.p className="text-lg md:text-xl font-heading text-foreground tracking-wide mb-8" initial={{
           opacity: 0,
           y: 30
         }} whileInView={{
@@ -260,6 +260,46 @@ const ScrollInvitation = () => {
         }}>
             Doha, Qatar
           </motion.p>
+
+          {/* Map */}
+          <motion.a
+            href="https://maps.google.com/?q=Radisson+Blu+Hotel+Doha+Qatar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <div className="relative overflow-hidden rounded-xl border border-blush-dark/20 shadow-lg bg-white/50">
+              <div className="aspect-[16/10] w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.9612685376!2d51.5295!3d25.2867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45db5e08b1d981%3A0x6e6dc7a9f9f1c0f0!2sRadisson%20Blu%20Hotel%2C%20Doha!5e0!3m2!1sen!2sqa!4v1700000000000!5m2!1sen!2sqa"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="pointer-events-none"
+                />
+              </div>
+              {/* Overlay for tap effect */}
+              <div className="absolute inset-0 bg-rose/0 group-hover:bg-rose/5 transition-colors duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-md">
+                  <span className="text-sm font-heading text-rose tracking-wide">Open in Google Maps</span>
+                </div>
+              </div>
+            </div>
+            <p className="mt-4 text-sm text-muted-foreground font-body flex items-center justify-center gap-2">
+              <svg className="w-4 h-4 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Tap to get directions
+            </p>
+          </motion.a>
         </div>
       </ScrollSection>
 
@@ -315,10 +355,6 @@ const ScrollInvitation = () => {
         </div>
       </ScrollSection>
 
-      {/* Section 7: Closing */}
-      <ScrollSection>
-        
-      </ScrollSection>
     </div>;
 };
 export default ScrollInvitation;
