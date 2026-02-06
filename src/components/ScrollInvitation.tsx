@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import flowersImg from "@/assets/flowers.png";
+import floralLeft from "@/assets/floral-left.png";
+import floralRight from "@/assets/floral-right.png";
 import ScrollSection from "./ScrollSection";
-import { Camera, CameraOff, Users } from "lucide-react";
+import { CameraOff, Users } from "lucide-react";
 
 const ScrollInvitation = () => {
   return (
@@ -63,25 +64,25 @@ const ScrollInvitation = () => {
 
       {/* Section 3: Names */}
       <ScrollSection>
-        <div className="relative text-center">
+        <div className="relative text-center px-8">
           {/* Decorative flowers */}
           <motion.img
-            src={flowersImg}
+            src={floralLeft}
             alt=""
-            className="absolute top-16 -left-32 w-32 h-32 object-contain opacity-50 pointer-events-none"
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 0.5, x: 0 }}
+            className="absolute -top-8 -left-40 md:-left-52 w-48 md:w-64 h-auto object-contain opacity-70 pointer-events-none"
+            initial={{ opacity: 0, x: -50, rotate: -10 }}
+            whileInView={{ opacity: 0.7, x: 0, rotate: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.2 }}
           />
           <motion.img
-            src={flowersImg}
+            src={floralRight}
             alt=""
-            className="absolute top-16 -right-32 w-32 h-32 object-contain opacity-50 pointer-events-none scale-x-[-1]"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 0.5, x: 0 }}
+            className="absolute -top-8 -right-40 md:-right-52 w-48 md:w-64 h-auto object-contain opacity-70 pointer-events-none"
+            initial={{ opacity: 0, x: 50, rotate: 10 }}
+            whileInView={{ opacity: 0.7, x: 0, rotate: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 1.2 }}
           />
 
           <motion.p
