@@ -31,7 +31,7 @@ const ScrollInvitation = () => {
         <div className="text-center max-w-xl">
           <motion.p
             className="text-lg md:text-xl text-rose/80 font-heading mb-4"
-            style={{ fontFamily: "'Aref Ruqaa', serif" }}
+            style={{ fontFamily: "'Scheherazade New', serif" }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -51,14 +51,13 @@ const ScrollInvitation = () => {
           </motion.p>
           <motion.p
             className="text-xl md:text-2xl text-gold font-heading"
-            style={{ fontFamily: "'Aref Ruqaa', serif", fontWeight: 700 }}
+            style={{ fontFamily: "'Scheherazade New', serif", fontWeight: 600 }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            بَارَكَ اللهُ لَكُم وَبَارَكَ عَلَيْكُم<br />
-            وَجَمَعَ بَيْنَكُمَا فِي خَيْر
+            بَارَكَ اللهُ لَكُم وَبَارَكَ عَلَيْكُم وَجَمَعَ بَيْنَكُمَا فِي خَيْر
           </motion.p>
         </div>
       </ScrollSection>
