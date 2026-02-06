@@ -57,6 +57,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        gold: "hsl(var(--gold))",
+        "gold-light": "hsl(var(--gold-light))",
+        blush: "hsl(var(--blush))",
+        "blush-dark": "hsl(var(--blush-dark))",
+        ivory: "hsl(var(--ivory))",
+        rose: "hsl(var(--rose))",
+        "rose-light": "hsl(var(--rose-light))",
+      },
+      fontFamily: {
+        display: ['Great Vibes', 'cursive'],
+        heading: ['Cormorant Garamond', 'serif'],
+        body: ['Playfair Display', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
