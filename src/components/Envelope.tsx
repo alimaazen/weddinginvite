@@ -8,7 +8,7 @@ const Envelope = ({
   onOpen
 }: EnvelopeProps) => {
   return <AnimatePresence>
-      {!isOpen && <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-romantic cursor-pointer" onClick={onOpen} exit={{
+      {!isOpen && <motion.div className="fixed inset-0 z-50 flex items-center justify-center bg-white cursor-pointer" onClick={onOpen} exit={{
       opacity: 0
     }} transition={{
       duration: 0.8
