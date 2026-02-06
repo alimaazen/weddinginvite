@@ -31,7 +31,7 @@ const ScrollInvitation = () => {
         <div className="text-center max-w-xl">
           <motion.p
             className="text-lg md:text-xl text-rose/80 font-heading mb-4"
-            style={{ fontFamily: 'serif' }}
+            style={{ fontFamily: "'Reem Kufi', sans-serif", fontWeight: 500 }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -51,7 +51,7 @@ const ScrollInvitation = () => {
           </motion.p>
           <motion.p
             className="text-xl md:text-2xl text-gold font-heading"
-            style={{ fontFamily: 'serif' }}
+            style={{ fontFamily: "'Reem Kufi', sans-serif", fontWeight: 600 }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
