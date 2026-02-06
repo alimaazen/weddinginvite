@@ -129,10 +129,10 @@ const ScrollInvitation = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <p className="text-5xl md:text-6xl text-rose font-heading mb-2" style={{ fontFamily: 'serif' }}>
-              فيداء نرجس
+              فيداء كبير
             </p>
             <p className="text-xl md:text-2xl font-heading tracking-[0.3em] text-foreground">
-              FIDA NARGIS
+              FIDA KABEER
             </p>
           </motion.div>
         </div>
