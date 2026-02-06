@@ -44,7 +44,7 @@ const Envelope = ({
                 <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-ivory via-ivory to-blush/20 rounded-b-md">
                   {/* Decorative lines */}
                   <div className="absolute top-6 left-6 right-6 h-px bg-gold/20" />
-                  <div className="absolute top-10 left-8 right-8 h-px bg-gold/15" />
+                  <div className="absolute bottom-6 left-8 right-8 h-px bg-gold/15" />
                 </div>
 
                 {/* Top flap triangle */}
