@@ -61,7 +61,8 @@ const CountdownTimer = () => {
           <div className="bg-ivory/80 backdrop-blur-sm rounded-xl shadow-soft px-5 py-4 md:px-8 md:py-6 border border-blush-dark/20 min-w-[70px] md:min-w-[100px]">
             <motion.span
               key={block.value}
-              className="text-3xl md:text-5xl font-display text-rose"
+              className="text-3xl md:text-5xl text-rose"
+              style={{ fontFamily: "'Cinzel', serif", fontWeight: 500 }}
               initial={{ scale: 1.2, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3 }}
@@ -69,7 +70,7 @@ const CountdownTimer = () => {
               {String(block.value).padStart(2, "0")}
             </motion.span>
           </div>
-          <p className="text-xs md:text-sm font-body tracking-widest uppercase text-muted-foreground mt-3">
+          <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-muted-foreground mt-3" style={{ fontFamily: "'Cinzel', serif" }}>
             {block.label}
           </p>
         </motion.div>
