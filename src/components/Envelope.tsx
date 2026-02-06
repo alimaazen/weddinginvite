@@ -103,9 +103,7 @@ const Envelope = ({
           delay: 0.4,
           duration: 0.6
         }}>
-              <motion.p className="font-display text-rose text-2xl md:text-3xl mb-3">
-                You're Invited
-              </motion.p>
+              
               
             </motion.div>
           </div>
