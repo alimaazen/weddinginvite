@@ -39,12 +39,12 @@ const Index = () => {
         <div className="pt-16 pb-[50vh] flex flex-col items-center">
           <CountdownTimer />
           <motion.p
-            className="mt-8 text-2xl md:text-3xl text-foreground font-heading"
+            className="mt-8 text-4xl md:text-5xl text-foreground font-heading"
             style={{ fontFamily: "'Lateef', serif" }}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1 }}
           >
             بِإِذْنِ الله
           </motion.p>
