@@ -13,11 +13,11 @@ const Index = () => {
   return (
     <div className="min-h-screen overflow-x-hidden relative">
       <div
-        className="fixed inset-0 z-0 bg-cover bg-center blur-[2px]"
+        className="fixed inset-0 z-0 bg-cover bg-center blur-[1px]"
         style={{ backgroundImage: `url(${floralBg})` }}
       />
       {/* Dark overlay for readability */}
-      <div className="fixed inset-0 bg-black/60 z-[1] pointer-events-none" />
+      <div className="fixed inset-0 bg-black/50 z-[1] pointer-events-none" />
       <div
         className="fixed inset-0 z-[2] opacity-[0.2] pointer-events-none mix-blend-soft-light"
         style={{
