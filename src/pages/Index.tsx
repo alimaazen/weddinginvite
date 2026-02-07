@@ -1,17 +1,24 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
 import FallingPetals from "@/components/FallingPetals";
 import ScrollInvitation from "@/components/ScrollInvitation";
 import CountdownTimer from "@/components/CountdownTimer";
 import Envelope from "@/components/Envelope";
+import floralBg from "@/assets/floral.jpeg";
 
 const Index = () => {
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-romantic overflow-x-hidden relative">
-      {/* Paper texture overlay */}
-      <div 
-        className="fixed inset-0 z-10 opacity-[0.15] pointer-events-none mix-blend-multiply"
+    <div
+      className="min-h-screen overflow-x-hidden relative bg-fixed bg-cover bg-center"
+      style={{ backgroundImage: `url(${floralBg})` }}
+    >
+      {/* Dark overlay for readability */}
+      <div className="fixed inset-0 bg-black/40 z-0 pointer-events-none" />
+      <div
+        className="fixed inset-0 z-10 opacity-[0.2] pointer-events-none mix-blend-overlay"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
         }}
@@ -28,10 +35,26 @@ const Index = () => {
         <ScrollInvitation />
 
         {/* Countdown timer */}
-        <div className="py-16 flex justify-center">
+        <div className="pt-16 pb-[50vh] flex justify-center">
           <CountdownTimer />
         </div>
       </div>
+
+
+      <motion.div
+        className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 flex flex-col items-center gap-1 pointer-events-none"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isEnvelopeOpen ? 1 : 0 }}
+        transition={{ delay: 0.5, duration: 1 }}
+      >
+        <span className="text-foreground text-[10px] md:text-xs font-heading font-semibold tracking-[0.2em] uppercase">Please Scroll</span>
+        <motion.div
+          animate={{ y: [0, 6, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <ChevronDown className="w-4 h-4 md:w-5 md:h-5 text-foreground" />
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

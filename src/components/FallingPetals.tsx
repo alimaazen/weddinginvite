@@ -3,7 +3,7 @@ import { useMemo } from "react";
 
 const FallingPetals = () => {
   const petals = useMemo(() => {
-    return Array.from({ length: 20 }, (_, i) => ({
+    return Array.from({ length: 10 }, (_, i) => ({
       id: i,
       left: Math.random() * 100,
       delay: Math.random() * 5,
@@ -41,7 +41,7 @@ const FallingPetals = () => {
             height={petal.size}
             viewBox="0 0 24 24"
             fill="none"
-            className="text-rose-light"
+            className="text-petal"
           >
             <path
               d="M12 2C12 2 8 6 8 12C8 18 12 22 12 22C12 22 16 18 16 12C16 6 12 2 12 2Z"

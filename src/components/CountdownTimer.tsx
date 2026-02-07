@@ -58,7 +58,7 @@ const CountdownTimer = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 2 + index * 0.1 }}
         >
-          <div className="bg-ivory/80 backdrop-blur-sm rounded-xl shadow-soft px-5 py-4 md:px-8 md:py-6 border border-blush-dark/20 min-w-[70px] md:min-w-[100px]">
+          <div className="bg-black/20 backdrop-blur-sm rounded-xl shadow-soft px-5 py-4 md:px-8 md:py-6 border border-white/10 min-w-[70px] md:min-w-[100px]">
             <motion.span
               key={block.value}
               className="text-3xl md:text-5xl text-rose"
@@ -70,7 +70,7 @@ const CountdownTimer = () => {
               {String(block.value).padStart(2, "0")}
             </motion.span>
           </div>
-          <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-muted-foreground mt-3" style={{ fontFamily: "'Cinzel', serif" }}>
+          <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-foreground font-semibold mt-3" style={{ fontFamily: "'Cinzel', serif" }}>
             {block.label}
           </p>
         </motion.div>

@@ -103,32 +103,34 @@ const InvitationCard = () => {
           </p>
         </motion.div>
 
-        {/* Arabic hadith text */}
+        {/* Arabic preamble */}
         <motion.div
           className="text-center mb-4"
           variants={itemVariants}
         >
-          <p className="text-lg text-rose/80 font-heading" style={{ fontFamily: 'serif' }}>
+          <p className="text-lg text-rose/80 font-heading" style={{ fontFamily: "'Amiri', serif" }}>
             أَنَّ النَّبِيَّ ﷺ كَانَ إِذَا رَفَأَ قَالَ
           </p>
         </motion.div>
 
         {/* English translation */}
         <motion.p
-          className="text-center text-muted-foreground text-sm md:text-base mb-4 font-body italic"
+          className="text-center text-foreground font-body italic text-sm md:text-base mb-4 font-semibold"
           variants={itemVariants}
         >
           Prophet ﷺ used to say, when offering<br />
-          congratulations of the occasion of marriage:
+          congratulations on the occasion of marriage:
         </motion.p>
+
+
 
         {/* Arabic blessing */}
         <motion.div
           className="text-center mb-8"
           variants={itemVariants}
         >
-          <p className="text-lg md:text-xl text-gold font-heading" style={{ fontFamily: 'serif' }}>
-            بَارَكَ اللهُ لَكُم وَبَارَكَ عَلَيْكُم وَجَمَعَ بَيْنَكُمَا فِي خَيْر
+          <p className="text-xl md:text-3xl text-rose font-heading" style={{ fontFamily: "'Lateef', serif", fontWeight: 400 }}>
+            بارك اللهُ لَكُما و بارك عَلَيْكُمَا وَ جَمَعَ بَيْنَكُما في خَير
           </p>
         </motion.div>
 
@@ -138,10 +140,10 @@ const InvitationCard = () => {
           variants={itemVariants}
         >
           <p className="text-4xl md:text-5xl text-rose font-heading" style={{ fontFamily: 'serif' }}>
-            احمد عادل
+            فيداء كبير
           </p>
           <p className="text-4xl md:text-5xl text-rose font-heading mt-2" style={{ fontFamily: 'serif' }}>
-            فيداء نرجس
+            احمد عادل
           </p>
         </motion.div>
 
@@ -152,11 +154,11 @@ const InvitationCard = () => {
         >
           <div className="flex items-center justify-center gap-4">
             <span className="text-lg md:text-xl font-heading tracking-widest text-foreground">
-              AHMED ADHIL
+              FIDA KABEER
             </span>
             <span className="text-2xl font-display text-gold">&</span>
             <span className="text-lg md:text-xl font-heading tracking-widest text-foreground">
-              FIDA NARGIS
+              AHMED ADHIL
             </span>
           </div>
         </motion.div>
