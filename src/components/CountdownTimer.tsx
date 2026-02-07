@@ -37,7 +37,7 @@ const CountdownTimer = () => {
   }, []);
 
   const timeBlocks = [
-    { label: "Days", value: timeLeft.days },
+    { label: "Daysss", value: timeLeft.days },
     { label: "Hours", value: timeLeft.hours },
     { label: "Minutes", value: timeLeft.minutes },
     { label: "Seconds", value: timeLeft.seconds },
