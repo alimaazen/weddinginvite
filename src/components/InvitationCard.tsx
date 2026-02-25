@@ -183,10 +183,10 @@ const InvitationCard = () => {
           variants={itemVariants}
         >
           <p className="text-sm md:text-base font-heading tracking-wider text-foreground">
-            MAY 28TH | 8:30PM
+            MAY 29TH | 8:30PM
           </p>
           <p className="text-sm text-muted-foreground font-heading tracking-wide">
-            DHUL HIJJAH 11 1447 AH
+            DHUL HIJJAH 12 1447 AH
           </p>
           <p className="text-sm md:text-base font-heading tracking-wider text-foreground pt-2">
             VENUE : RADISSON BLU HOTEL DOHA
