@@ -170,7 +170,7 @@ const ScrollInvitation = () => {
             SAVE THE DATE
           </p>
           <p className="text-5xl md:text-7xl font-display text-rose">
-            May 28
+            May 29
           </p>
           <p className="text-xl md:text-2xl font-heading tracking-widest text-foreground mt-2">
             2026
@@ -211,7 +211,7 @@ const ScrollInvitation = () => {
             8:30 PM
           </p>
           <p className="text-foreground font-heading text-sm font-semibold tracking-wide mt-2">
-            DHUL HIJJAH 11, 1447 AH
+            DHUL HIJJAH 12, 1447 AH
           </p>
         </motion.div>
       </div>
